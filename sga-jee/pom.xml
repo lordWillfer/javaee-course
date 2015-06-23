@@ -7,8 +7,8 @@
   <properties>
   	<endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  	<!-- <glassfish.embedded-static-shell.jar>/home/williams/DeveloperTools/GlassFish/glassfish4/glassfish/lib/embedded/glassfish-embedded-static-shell.jar</glassfish.embedded-static-shell.jar> -->
-  	<glassfish.embedded-static-shell.jar>C:\Developer\Glassfish\glassfish4\glassfish\lib\embedded\glassfish-embedded-static-shell.jar</glassfish.embedded-static-shell.jar>
+  	<glassfish.embedded-static-shell.jar>/home/williams/DeveloperTools/GlassFish/glassfish4/glassfish/lib/embedded/glassfish-embedded-static-shell.jar</glassfish.embedded-static-shell.jar>
+  	<!-- <glassfish.embedded-static-shell.jar>C:\Developer\Glassfish\glassfish4\glassfish\lib\embedded\glassfish-embedded-static-shell.jar</glassfish.embedded-static-shell.jar> -->
   </properties>
   
   <dependencies>
@@ -44,6 +44,11 @@
 		<groupId>org.slf4j</groupId>
 		<artifactId>slf4j-log4j12</artifactId>
 		<version>1.7.12</version>
+	</dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.35</version>
 	</dependency>
   </dependencies>
   
