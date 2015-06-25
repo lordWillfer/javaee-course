@@ -25,7 +25,6 @@ public class ClientePersonaService {
 			
 			System.out.println("\nFin llamada al EJB desde el cliente.");
 		} catch (NamingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

@@ -29,7 +29,7 @@ public class PersonaServiceTest {
 		
 		assertTrue(personaService != null);
 		
-		assertEquals(2, personaService.listarPersonas().size());
+		assertEquals(3, personaService.listarPersonas().size());
 		
 		System.out.println("El número de personas es igual a: " + personaService.listarPersonas().size());
 		this.desplegarPersonas(personaService.listarPersonas());
