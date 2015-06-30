@@ -9,32 +9,38 @@ import sv.gob.mh.sga.domain.Persona;
 import sv.gob.mh.sga.eis.PersonaDao;
 
 @Stateless
-public class PersonaServiceImpl implements PersonaServiceRemote, PersonaService {
+public class PersonaServiceImpl implements PersonaService, PersonaServiceRemote {
 
 	@EJB
 	private PersonaDao personaDao;
 	
+	@Override
 	public List<Persona> listarPersonas() {
 		return personaDao.findAllPersonas();
 	}
 
+	@Override
 	public Persona encontrarPersonaPorId(Persona persona) {
 		return personaDao.findPersonaById(persona);
 	}
 
+	@Override
 	public Persona encontrarPerosnaPorEmail(Persona persona) {
 		return personaDao.findPersonaByEmail(persona);
 	}
 
+	@Override
 	public void registrarPersona(Persona persona) {
 		personaDao.insertPersona(persona);
 	}
 
+	@Override
 	public void modificarPersona(Persona persona) {
 		personaDao.updatePersona(persona);
 	}
 
-	public void eliminatPersona(Persona persona) {
+	@Override
+	public void eliminarPersona(Persona persona) {
 		personaDao.deletePersona(persona);
 	}
 }

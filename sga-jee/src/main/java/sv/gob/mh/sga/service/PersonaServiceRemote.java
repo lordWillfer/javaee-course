@@ -19,5 +19,5 @@ public interface PersonaServiceRemote {
 	
 	public void modificarPersona(Persona persona);
 	
-	public void eliminatPersona(Persona persona);
+	public void eliminarPersona(Persona persona);
 }
